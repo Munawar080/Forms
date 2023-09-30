@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-forms.component.scss']
 })
 export class NgFormsComponent {
+ 
 
+  onFormSubmit(e: Event){
+    console.log("form ===>>>>", e)
+  }
 }

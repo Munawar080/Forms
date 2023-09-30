@@ -1,1 +1,16 @@
-<p>ng-forms works!</p>
+<mat-card class="w-[400px]">
+    <mat-card-content class="flex flex-col items-center">
+        <form  (onsubmit)="onFormSubmit($event)" class="flex items-center flex-col justify-center">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="password">
+        </mat-form-field>
+
+        <button mat-button type="submit" color="primary">Submit</button>
+    </form>
+    </mat-card-content>
+</mat-card>
